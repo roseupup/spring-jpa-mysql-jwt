@@ -63,12 +63,12 @@ spring.datasource.password=dummypassword
 
 * You would get a 201 responss which means you signup a user successfully.
 * After signup, send a post request to http://localhost:8080/auth/login to get a JWT Token.
-* 
+
 <img width="1447" alt="image" src="https://github.com/roseupup/spring-jpa-mysql-jwt/assets/22486690/451f9772-7eb0-4fa6-a051-e73bc7194b79">
 <img width="1453" alt="image" src="https://github.com/roseupup/spring-jpa-mysql-jwt/assets/22486690/418931e8-030f-4250-b252-9e7870639e29">
 
 * Copy the access token and paste it to header as follow:
-* 
+
 <img width="537" alt="image" src="https://github.com/roseupup/spring-jpa-mysql-jwt/assets/22486690/400e5182-a7b1-4389-91f3-7fd2b431cc4f">
 
 * Now you can access resources under the protection of Spring Security.
@@ -97,15 +97,3 @@ spring.datasource.password=dummypassword
 		http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
 	}
   ```
-
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
